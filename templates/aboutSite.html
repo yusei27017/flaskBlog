@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<head>
+<link href="../static/product.css" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="product.css" rel="stylesheet">
+</head>
+<body>
+
+<main>
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+      <h1 class="display-4 fw-normal">使用python輕量級框架flask搭建</h1>
+      <h1 class="display-5 fw-normal"> server選用gcp的虛擬機器</h1>
+      <p class="lead fw-normal">對於python-django,php-laravel,golang-gin都有使用經驗</p>
+      <a class="btn btn-outline-secondary" href="/aboutSite">點此看blog/code</a>
+    </div>
+  </div>
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+      <h2 class="display-3 fw-normal">對於python爬蟲常用套件有selenium,requests,scrapy</h2>
+      <h3 class="display-4 fw-normal">也接觸些golang,node js</h3>
+      <h4 class="display-5 fw-normal">經常維護php-laravel專案</h4>
+      <h5 class="display-6 fw-normal">雖沒接觸過C語言，但對於機器與C語言操作相當有興趣</h5>
+    </div>
+  </div>
+
+<footer class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+      <small class="d-block mb-3 text-muted">&copy; 2017–2021</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Features</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="#">Cool stuff</a></li>
+        <li><a class="link-secondary" href="#">Random feature</a></li>
+        <li><a class="link-secondary" href="#">Team feature</a></li>
+        <li><a class="link-secondary" href="#">Stuff for developers</a></li>
+        <li><a class="link-secondary" href="#">Another one</a></li>
+        <li><a class="link-secondary" href="#">Last time</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+      
+</body>
+{% endblock %}
