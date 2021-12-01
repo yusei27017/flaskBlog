@@ -34,6 +34,10 @@ def ps5Page():
 def skillPage():
     return render_template("skillPage.html")
 
+@app.route("/aboutJp")
+def aboutJp():
+    return render_template("aboutJp.html")
+
 @app.route("/aboutMeData")
 def aboutMeData():
     res = mongo.db.aboutMe.find({'sort':'aboutMe'})
@@ -47,6 +51,8 @@ def projectData():
     for v in res:
         data = v['data']
     return jsonify(data=data)
+
+
 
 @app.route("/mongodb")
 def mongodb():
