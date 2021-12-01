@@ -11,7 +11,9 @@
         -moz-user-select: none;
         user-select: none;
       }
-
+      .div_onclick{
+        cursor:pointer;
+      }
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -36,16 +38,16 @@
   </div>
 
   <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+    <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden div_onclick" onclick="location.href='/pixivPage';">
       <div class="my-3 py-3">
         <h2 class="display-5">pixiv  圖片爬取專案</h2>
         <p class="lead">使用python scrapy框架 加上docker容器pull scrapy-splash渲染js動態加載</p>
       </div>
       <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-        <img src="">
+        <img src="../static/pixiv.png" class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 300px; border-radius: 21px 21px 0 0;">
       </div>
     </div>
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden div_onclick" onclick="location.href='/ps5Page';">
       <div class="my-3 p-3">
         <h2 class="display-5">PlaySation5 自動購買專案</h2>
         <p class="lead">簡單的python requests完成簡易的部署、且快速、輕量的搶購</p>
@@ -57,14 +59,16 @@
   </div>
 
   <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden div_onclick" onclick="location.href='/skillPage';">
       <div class="my-3 p-3">
         <h2 class="display-5">常用且實用的基本知識</h2>
         <p class="lead">舉凡資料庫的MySql,mongoDB,前端的js html css jquery和機器的指令等...</p>
       </div>
-      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <img src="../static/skill.png" class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 300px; border-radius: 21px 21px 0 0;">
+      </div>
     </div>
-    <div class="bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+    <div class="bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidde div_onclick">
       <div class="my-3 py-3">
         <h2 class="display-5">其他興趣與技能</h2>
         <p class="lead">JLPT N2 2019/09合格,JLPT N1 2020/01合格</p>
