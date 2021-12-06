@@ -52,13 +52,12 @@ def projectData():
         data = v['data']
     return jsonify(data=data)
 
+@app.route("/footerData")
+def footerData():
+    res = mongo.db.aboutMe.find({'sort':'footer'})
+    for v in res:
+        data = v['data']
+    return jsonify(data=data)
 
 
-@app.route("/mongodb")
-def mongodb():
-    test = mongo.db.aboutMe.find({})
-    # print(test.execute())
-    for i in test:
-        print(i['stadyexp'])
-    print('test')
-    return f"200 ok: {i}"
+

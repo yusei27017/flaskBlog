@@ -85,20 +85,40 @@
       <small class="d-block mb-3 text-muted">&copy; 2017–2021</small>
     </div>
     <div class="col-6 col-md">
-      <h5>Features</h5>
+      <h5>Link</h5>
       <ul class="list-unstyled text-small">
-        <li><a class="link-secondary" href="#">Cool stuff</a></li>
-        <li><a class="link-secondary" href="#">Random feature</a></li>
-        <li><a class="link-secondary" href="#">Team feature</a></li>
-        <li><a class="link-secondary" href="#">Stuff for developers</a></li>
-        <li><a class="link-secondary" href="#">Another one</a></li>
-        <li><a class="link-secondary" href="#">Last time</a></li>
+        <li><a id="footer_0" class="link-secondary" href="#"></a></li>
+        <li><a id="footer_1" class="link-secondary" href="#"></a></li>
+        <li><a id="footer_2" class="link-secondary" href="#"></a></li>
+        <li><a id="footer_3" class="link-secondary" href="#"></a></li>
+        <li><a id="footer_4" class="link-secondary" href="#"></a></li>
+        <li><a id="footer_5" class="link-secondary" href="#"></a></li>
       </ul>
     </div>
   </div>
 </footer>
 
 
-      
+<script>
+    $(function(){
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function(){
+      if(this.readyState == 4 && this.status == 200){
+        var data = JSON.parse(this.responseText).data;
+
+        $("#footer_0").text(data.footer_0);
+        $("#footer_1").text(data.footer_1);
+        $("#footer_2").text(data.footer_2);
+        $("#footer_3").text(data.footer_3);
+        $("#footer_4").text(data.footer_4);
+        $("#footer_5").text(data.footer_5);
+
+      }
+    }
+    xhr.open('GET', '/footerData', true);
+    xhr.send();
+  })
+</script>
 </body>
+
 {% endblock %}

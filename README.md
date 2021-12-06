@@ -5,6 +5,9 @@
 sudo apt install nodejs
 sudo apt install npm
 ```
+## 安裝mongodb on debian
+ref :
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-debian/
 
 ## 安裝PM2
 ```shell
