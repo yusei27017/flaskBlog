@@ -38,6 +38,10 @@ def skillPage():
 def aboutJp():
     return render_template("aboutJp.html")
 
+@app.route("/linkPage")
+def linkPage():
+    return render_template("linkPage.html")
+
 @app.route("/aboutMeData")
 def aboutMeData():
     res = mongo.db.aboutMe.find({'sort':'aboutMe'})
@@ -55,6 +59,13 @@ def projectData():
 @app.route("/footerData")
 def footerData():
     res = mongo.db.aboutMe.find({'sort':'footer'})
+    for v in res:
+        data = v['data']
+    return jsonify(data=data)
+
+@app.route("/linkData")
+def linkData():
+    res = mongo.db.aboutMe.find({'sort':'linkData'})
     for v in res:
         data = v['data']
     return jsonify(data=data)
