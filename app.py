@@ -1,5 +1,6 @@
 from flask import Flask, jsonify
 from flask import render_template, redirect
+# from flask import request, send_from_directory
 from flask_pymongo import PyMongo
 
 app = app = Flask(__name__)
@@ -70,5 +71,8 @@ def linkData():
         data = v['data']
     return jsonify(data=data)
 
+@app.route("/sitemap.xml")
+def sitemap():
+    return render_template("sitemap.xml")
 
 
