@@ -71,8 +71,8 @@ def linkData():
         data = v['data']
     return jsonify(data=data)
 
-@app.route("/sitemap.xml")
-def sitemap():
-    return render_template("sitemap.xml")
+# @app.route("/sitemap.xml")
+# def sitemap():
+#     return render_template("sitemap.xml")
 
 
